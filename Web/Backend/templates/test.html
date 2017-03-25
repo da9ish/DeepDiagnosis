@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Python Programming Tutorials</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<a class="btn btn-danger" href="/dashboard/">YOLO</a>
+<h1>Upload new File</h1>
+<form action="/upload/" method="post" enctype=multipart/form-data>
+<input class="form-control" type=file name=file>here</input>
+<input class="form-control" type=text name=file>here</input>
+<input class="btn btn-default" type=submit value=Upload>here</input>
+</form>
+<p>Hi there how ya doin!?</p>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
