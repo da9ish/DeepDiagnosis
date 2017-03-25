@@ -142,11 +142,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            System.out.println("AsynTask");
+            System.out.println(pic.get(0));
             String file_name;
             String file_dir[] = pic.get(0).split("/");
             int count = file_dir.length;
             file_name = file_dir[count - 1];
+            System.out.println(file_name);
 
             final String uploadFilePath = pic.get(0);
             HttpURLConnection conn = null;
@@ -178,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
 
                     // open a URL connection to the Servlet
                     FileInputStream fileInputStream = new FileInputStream(sourceFile);
-                    URL url = new URL("http://192.168.137.1:8000/");
+                    URL url = new URL("http://192.168.137.1:8000/upload/");
 
                     // Open a HTTP  connection to  the URL
                     conn = (HttpURLConnection) url.openConnection();
@@ -193,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
                     dos = new DataOutputStream(conn.getOutputStream());
 
                     dos.writeBytes(twoHyphens + boundary + lineEnd);
-                    dos.writeBytes("Content-Disposition: form-data; name=\"uploaded_file\";filename=\""
+                    dos.writeBytes("Content-Disposition: form-data; name=\"file\";filename=\""
                             + file_name + "\"" + lineEnd);
 
                     dos.writeBytes(lineEnd);
@@ -224,11 +225,14 @@ public class MainActivity extends AppCompatActivity {
                     serverResponseCode = conn.getResponseCode();
                     String serverResponseMessage = conn.getResponseMessage();
 
+                    BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                    System.out.println(br.readLine());
+
 
                     Log.i("uploadFile", "HTTP Response is : "
                             + serverResponseMessage + ": " + serverResponseCode);
 
-                    response = serverResponseMessage;
+                    response = br.readLine();
                     if (serverResponseCode == 200) {
                         runOnUiThread(new Runnable() {
                             public void run() {
