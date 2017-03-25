@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Python Programming Tutorials</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<a class="btn btn-default" href="/login/">YOLO</a>
+<p>Hi Learn this stuff!?</p>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="basics">
+	<ul>
+	   {% for t in TOPIC_DICT["Basics"] %}
+	     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+	   {% endfor %}
+	</ul>
+  </div>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
