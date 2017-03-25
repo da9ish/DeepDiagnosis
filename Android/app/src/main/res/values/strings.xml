@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Deep Diagnosis</string>
     <string name="action_settings">Settings</string>
+
+    <string name="malignant">
+        \u2022 Skin cancer is a disease in which malignant (cancer) cells form in the tissues of the skin.\n
+        \u2022 There are different types of cancer that start in the skin.\n
+        \u2022 Skin color and being exposed to sunlight can increase the risk of non-melanoma skin cancer and actinic keratosis.\n
+        \u2022 Non-Melanoma skin cancer and actinic keratosis often appear as a change in the skin.\n
+        \u2022 Tests or procedures that examine the skin are used to detect (find) and diagnose non-melanoma skin cancer and actinic keratosis.\n
+        \u2022 Certain factors affect prognosis (chance of recovery) and treatment options.\n
+    </string>
 </resources>

@@ -25,16 +25,6 @@
             android:layout_marginTop="16dp"
             android:layout_height="350dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/result"
-            android:layout_gravity="center_horizontal"
-            android:text="Result"
-            android:textSize="20sp"
-            android:visibility="gone"
-            android:layout_marginTop="16dp" />
-
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
@@ -52,6 +42,14 @@
             android:id="@+id/progress_bar"
             android:visibility="gone"
             android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processing"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
 
     </android.support.design.widget.AppBarLayout>
 
