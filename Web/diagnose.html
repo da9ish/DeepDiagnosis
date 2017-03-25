@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">      
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<style>
+		.position
+		{
+			position:relative;
+			left:50%;
+			transform: translateX(-50%);
+		}
+		#blah{
+			display: none;
+		}
+
+	</style>
+
+</head>
+<body>
+	<!--NAVBAR-->
+	<div class="navbar-fixed">
+	<nav class="blue">
+		<div class="navbar-wrapper">
+			<a href="#" class="brand-logo" style="margin-left: 16px">Deep Diagnosis</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">Diabetes Retinopathy</a></li>
+				<li><a href="badges.html">Skin Cancer</a></li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+	<!--Upload Image-->
+	<form action="# " class="row">
+		<div class="file-field input-field col s6 offset-s3 row">
+			<div class="btn col wave-effect wave-light yellow accent-2 s4 offset-s4">
+				<span style="color: #000"> Select File</span>
+				<input type="file" id="imgInp">
+			</div><br>
+			<div class="file-path-wrapper col s12 row">
+				<input class="file-path validate col s4 offset-s4" type="text">
+			</div>
+		</div>
+			<div class="col s12 row">
+				<i id="icon" class="col s4 offset-s5 material-icons large" style="font-size: 200px;color: grey">image</i>
+				<img class="col s4 offset-s4" id="blah" src="" alt="your image" />	
+			</div>	
+			<div class="col s12 row">
+				<input type="submit" value="Upload" class="yellow accent-2 waves-effect waves-light btn col s2 offset-s5" style="color: #000">
+			</div>			
+		<!--Previewing Images-->
+
+	</form>  
+
+	<!--Script for Previewing Images-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script>
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					$('#blah').attr('src', e.target.result);
+					$('#blah').css({"display": "block"});
+					$('#icon').css({"display": "none"});
+				}
+
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+
+		$("#imgInp").change(function(){
+			readURL(this);
+		});
+	</script>
+
+</body>
+
+</html>
