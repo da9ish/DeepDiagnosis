@@ -1,6 +1,5 @@
 import os
 from flask import *
-from returndata import Content
 import predict as pred
 from werkzeug.utils import secure_filename
 
@@ -8,8 +7,6 @@ UPLOAD_FOLDER = './UPLOADFOLDER'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'bmp'])
 
 
-
-TOPIC_DICT = Content()
 app = Flask(__name__)
 app._static_folder = "/static"
 @app.route('/')
