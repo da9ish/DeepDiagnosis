@@ -1,0 +1,53 @@
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+
+		<style>
+			body{
+				height: 100vh;
+			}
+			.message{
+				position: relative;
+				top: 40%;
+				transform: translateY(-50%);
+			}
+			blockquote{
+				border-color: white;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<!--NAVBAR-->
+		<div class="navbar-fixed">
+			<nav class="blue">
+				<div class="navbar-wrapper">
+					<a href="#" class="brand-logo" style="margin-left: 16px">Deep Diagnosis</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a>Diabetes Retinopathy</a></li>
+						<li><a>Skin Cancer</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="row message">
+			<div class="container ">
+				<div class="card-panel orange white-text">
+					<h3>There is a {{confidence}}% chance of this being a case of Moderate Diabetic Retinopathy.</h3>
+					<blockquote ><h5>Please consult a Doctor.</h5></blockquote>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
