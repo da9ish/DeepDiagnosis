@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton fab;
     ProgressBar progressBar;
     TextView text;
+    static String classification = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Bundle b = getIntent().getExtras();
+        classification = b.getString("classification");
+        System.out.println(classification);
 
         text = (TextView) findViewById(R.id.progress_text);
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
@@ -122,7 +127,8 @@ public class MainActivity extends AppCompatActivity {
                 if (data != null) {
                     pic = new ArrayList<>();
                     pic.addAll(data.getStringArrayListExtra(FilePickerConst.KEY_SELECTED_MEDIA));
-                    new SendImageForDiagnosis().execute();
+
+                    new SendImageForDiagnosis(classification).execute();
                 }
                 break;
         }
@@ -131,6 +137,11 @@ public class MainActivity extends AppCompatActivity {
     class SendImageForDiagnosis extends AsyncTask<Void, Void, Void> {
 
         String response = null;
+        String classify = null;
+
+        public SendImageForDiagnosis(String classify) {
+            this.classify = classify;
+        }
 
         @Override
         protected void onPreExecute() {
@@ -180,7 +191,15 @@ public class MainActivity extends AppCompatActivity {
 
                         // open a URL connection to the Servlet
                         FileInputStream fileInputStream = new FileInputStream(sourceFile);
-                        URL url = new URL("http://192.168.1.5:8000/upload/");
+                        URL url = null;
+                        switch (classify){
+                            case "skin":
+                                url = new URL("http://192.168.137.1:8000/upload/");
+                                break;
+                            case "diabetes":
+                                url = new URL("http://192.168.137.1:8000/upload1/");
+                                break;
+                        }
 
                         // Open a HTTP  connection to  the URL
                         conn = (HttpURLConnection) url.openConnection();
@@ -222,14 +241,13 @@ public class MainActivity extends AppCompatActivity {
                         dos.writeBytes(lineEnd);
                         dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
 
-                        if (serverResponseCode == 200) {
-                            runOnUiThread(new Runnable() {
-                                public void run() {
-                                text.setText("Processing");
-                                }
+                        runOnUiThread(new Runnable() {
+                            public void run() {
+                            text.setText("Processing");
+                            }
 
-                            });
-                        }
+                        });
+
                         // Responses from the server (code and message)
                         serverResponseCode = conn.getResponseCode();
                         String serverResponseMessage = conn.getResponseMessage();
@@ -283,7 +301,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     type = "Non-Cancerous(Benine)";
                 }
-                String main = "Category: " + type + " \nConfidence: " + per + "%";
+                String main = "Category: " + type + " \nConfidence: " + String.format("%.2f", per) + "%";
                 System.out.println(main);
                 if (arr[0].equals("malignant")) {
                     new AlertDialog.Builder(MainActivity.this)
