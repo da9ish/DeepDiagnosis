@@ -3,7 +3,7 @@ This is a research oriented project where we have tried to use machine learning 
 
 The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a><br>
 We've trained the model on respective datasets and pickled them for easy use.
-Information regarding the datasets can be found in the references section.
+Information regarding the datasets can be found in the Integration as well as References section.
 
 
 # Contents
@@ -14,13 +14,6 @@ Information regarding the datasets can be found in the references section.
 * References
 * Liscense
 
-# Authors
-* Danish Shah
-* Jawad Shaikh
-* Afzal Sayed
-* Aditya Mishra
-* Maaz Khan
-
 # Requirements
 * Python 3.X.X
 * Flask
@@ -29,11 +22,11 @@ Information regarding the datasets can be found in the references section.
 # How to get it working?
 
 ## The Core
-=> The core part of the project is simply a program that loads in the trained model and passes an image through it for classification.<br>
-=> To run the core section simply clone the repo. copy the "predict.py" file from the root into your project folder.<br>
-=> Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
-=> Place the "trained_nets_Mumbai_hackathon" folder into you project directory.
-=> Now we simply fire up a Python shell or write the following python program.
+1. The core part of the project is simply a program that loads in the trained model and passes an image through it for classification.<br>
+2. To run the core section simply clone the repo. copy the "predict.py" file from the root into your project folder.<br>
+3. Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
+4. Place the "trained_nets_Mumbai_hackathon" folder into you project directory.
+5. Now we simply fire up a Python shell or write the following python program.
 * Import the module
 ``` python
 import predict.py as pred
@@ -50,16 +43,16 @@ pred.classifySkinLesion(image)
 # prints a string stating whether the image has a chance of diabetic ratinopathy (Normal, Moderate, Severe) with a percent confidence.
 pred.classifyDiabeticRetinopathy(image);
 ```
-=> The images should be in the same folder as the "predict.py" file their name should be passed as an argument to the function.
+6. The images should be in the same folder as the "predict.py". Their file name should be passed as an argument to the function.
 
 ## The Web App
-=> Running the web app is even simpler. Just place the trained_nets folder that we've downloaded in the above section and place it in the directory "Web/Backend/"
-=> In the above directory, you'll find a main.py file. That is the file that will launch our Flask app.
-=> Simply open a command line and type in :
+1. Running the web app is even simpler. Just place the trained_nets folder that we've downloaded in the above section and place it in the directory "Web/Backend/"
+2. In the above directory, you'll find a main.py file. That is the file that will launch our Flask app.
+3. Simply open a command line and type in :
 ``` python
 python main.py
 ```
-=> The app wil start locally and the command line will show the URL to access the app.
+4. The app wil start locally and the command line will show the URL to access the app.
 
 # Integration
 * We've integrated the trained model with a web app that we explored in the last section and an Android Applicaion.
@@ -77,9 +70,21 @@ python main.py
 
 
 
-# Contribution
-* Want to contribute?
-Contribute by adding more dataset for training the model.
+# References
+* Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
+* Want to train your own Inception model? Check out this link : <a href="https://github.com/tensorflow/models/tree/master/inception">Training Inception!</a>
+* Papers that inspired this project:<br>
+  * [Rethinking the Inception Model](https://arxiv.org/pdf/1512.00567.pdf)
+  
+
+# Authors
+* Danish Shah
+* Jawad Shaikh
+* Afzal Sayed
+* Aditya Mishra
+* Maaz Khan
 
 # Liscense
-This project is licensed under MIT License. 
+This project is licensed under <a href="https://github.com/DanishShah/DeepDiagnosis/blob/master/LICENSE.txt">MIT License</a>
+
+
