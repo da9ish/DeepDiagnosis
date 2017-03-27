@@ -2,15 +2,15 @@
 This is a research oriented project where we have tried to use machine learning models for classification tasks using images as an input. We've used CNN model for the task of image analysis and classification. The architecture of our model is a standard architecture used by many in the industry. The architecture is called Inception model.
 
 The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a>
+Information regarding the datasets can be found in the references section.
 
 
 # Contents
 * Authors
 * Requirements
 * How to get it working
-* Usage
 * Integration
-* Contribution
+* References
 * Liscense
 
 # Authors
@@ -71,20 +71,4 @@ Import predict.py to your project
 Contribute by adding more dataset for training the model.
 
 # Liscense
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/   
-
-   Copyright 2017 Danish Shah
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+This project is licensed under MIT License. 
