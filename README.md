@@ -73,6 +73,11 @@ python main.py
 ## References
 * Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
 * Want to train your own Inception model? Check out this link : <a href="https://github.com/tensorflow/models/tree/master/inception">Training Inception!</a>
+* We used two datasets for training our models.
+  * We used the [ISIC](https://isic-archive.com/) dataset for skin lesion classification task. It is a set of 5 different datasets out of which we used only 4 and skipped the one names "ISIC_SONIC-1". We still had a very skewed data proportions (around 1500 images for benign category and only 600 images for malignant). So we went ahead and wrote a python script to flip all the images in the malignant folder to double the size and add new features.
+    > We recieved a 79% accuracy on this model.
+  * The second dataset that we used was from this [Kaggle competition](https://www.kaggle.com/c/diabetic-retinopathy-detection). We used only 6000 images from this due to time constraints.
+    > This model gave us an accuracy of 68%.
 * Paper that inspired this project:
   * [Rethinking the Inception Model](https://arxiv.org/pdf/1512.00567.pdf)
   
