@@ -2,6 +2,7 @@
 This is a research oriented project where we have tried to use machine learning models for classification tasks using images as an input. We've used CNN model for the task of image analysis and classification. The architecture of our model is a standard architecture used by many in the industry. The architecture is called Inception model.
 
 The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a>
+We've trained the model on respective datasets and pickled them for easy use.
 Information regarding the datasets can be found in the references section.
 
 
@@ -28,31 +29,34 @@ Information regarding the datasets can be found in the references section.
 # How to get it working?
 
 ## The Core
-The core part of the project is simply a program that loads in the trained model and passes an image through it for classification.<br>
-
-
-
-
-
-# Usage
-Import predict.py to your project
+=> The core part of the project is simply a program that loads in the trained model and passes an image through it for classification.<br>
+=> To run the core section simply clone the repo. copy the "predict.py" file from the root into your project folder.<br>
+=> Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
+=> Place the "trained_nets_Mumbai_hackathon" folder into you project directory.
+=> Now we simply fire up a Python shell or write the following python program.
+* Import the module
 ``` python
-              import predict.py as pred
-              # method for classifying skin lesions
-              # returns a string stating whether the lesion is melignant(Cancerous) or benign(non-cancerous) with a percent confidence
-              pred.classifySkinLesion(image);
-              
-              # method for classifying diabetic retinopathy
-              # returns a string stating whether the image has a chance of diabetic ratinopathy (Normal, Moderate, Severe) with a percent confidence.
-              pred.classifyDiabeticRetinopathy(image);
-              
-              # Your Program.
+import predict.py as pred
 ```
+* Now we can simply call the below function to classify skin lesion image. (either benign or malignant)
+``` python
+# method for classifying skin lesions
+# prints a string stating whether the lesion is melignant(Cancerous) or benign(non-cancerous) with a percent confidence
+pred.classifySkinLesion(image)
+```
+* Or we could classify the severity of retinopathy using a clinical image of patient's retina
+``` python
+# method for classifying diabetic retinopathy
+# prints a string stating whether the image has a chance of diabetic ratinopathy (Normal, Moderate, Severe) with a percent confidence.
+pred.classifyDiabeticRetinopathy(image);
+```
+=> The images should be in the same folder as the "predict.py" file their name should be passed as an argument to the function.
+
 
 # Integration
 * DeepDiagnosis can be integrated with any device or technology.
 
-# Example
+## Example
 * Example of DeepDiagnosis integrated on an Android Device.
 
 
