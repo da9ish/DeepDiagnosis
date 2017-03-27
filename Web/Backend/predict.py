@@ -4,7 +4,7 @@ from flask import *
 # change this as you see fit
 
 
-def classify(filename):
+def classifySkinLesion(filename):
 
     image_path = "UPLOADFOLDER/"
     image_path += filename
