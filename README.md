@@ -1,7 +1,7 @@
 # Deep Diagnosis
 This is a research oriented project where we have tried to use machine learning models for classification tasks using images as an input. We've used CNN model for the task of image analysis and classification. The architecture of our model is a standard architecture used by many in the industry. The architecture is called Inception model.
 
-The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a>
+The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a><br>
 We've trained the model on respective datasets and pickled them for easy use.
 Information regarding the datasets can be found in the references section.
 
@@ -52,13 +52,21 @@ pred.classifyDiabeticRetinopathy(image);
 ```
 => The images should be in the same folder as the "predict.py" file their name should be passed as an argument to the function.
 
+## The Web App
+=> Running the web app is even simpler. Just place the trained_nets folder that we've downloaded in the above section and place it in the directory "Web/Backend/"
+=> In the above directory, you'll find a main.py file. That is the file that will launch our Flask app.
+=> Simply open a command line and type in :
+``` python
+python main.py
+```
+=> The app wil start locally and the command line will show the URL to access the app.
 
 # Integration
-* DeepDiagnosis can be integrated with any device or technology.
+* We've integrated the trained model with a web app that we explored in the last section and an Android Applicaion.
+* The screens of the Android app is given below.
+* The source of the app can be found in the repo under folder "Android". 
 
-## Example
-* Example of DeepDiagnosis integrated on an Android Device.
-
+## Screenshots (Android)
 
  .             |   .
 :-------------------------:|:-------------------------:
@@ -68,7 +76,6 @@ pred.classifyDiabeticRetinopathy(image);
 
 
 
-* Example of DeepDiagnosis integrated on Web.
 
 # Contribution
 * Want to contribute?
