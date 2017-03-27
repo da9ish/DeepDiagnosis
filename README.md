@@ -8,11 +8,11 @@ Information regarding the datasets can be found in the Integration as well as Re
 
 ## Contents
 * [Requirements](#requirements)
-* [How to get it working]()
-* [Integration]()
-* [References]()
-* [Authors]()
-* [Liscense]()
+* [How to get it working](#how-to-get-it-working?)
+* [Integration](#integration)
+* [References](#references)
+* [Authors](#authors)
+* [Liscense](#liscense)
 
 ## Requirements
 * Python 3.X.X
