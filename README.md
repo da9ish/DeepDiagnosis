@@ -38,7 +38,18 @@ Import predict.py to your project
 * DeepDiagnosis can be integrated with any device or technology.
 
 # Example
+* Example of DeepDiagnosis integrated on an Android Device.
+<img src="https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170331[1].png"/>
+<img src="https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170326[1].png"/>
+<img src="https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170321[1].png"/>
+<img src="https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170306[1].png"/>
+<img src="https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170313[1].png"/>
+<img src="https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170618[1].png"/>
 
-<img src=""/>
-<img src=""/>
-<img src=""/>
+* Example of DeepDiagnosis integrated on Web.
+
+# Contribution
+* Want to contribute?
+Contribute by adding more dataset for training the model.
+
+# Liscense
