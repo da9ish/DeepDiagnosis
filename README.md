@@ -3,7 +3,7 @@ This is a research oriented project where we have tried to use machine learning 
 
 The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a><br>
 We've trained the model on respective datasets and pickled them for easy use.
-Information regarding the datasets can be found in the Integration as well as References section.
+Information regarding the datasets can be found in the [References](#references) section.
 
 
 ## Contents
