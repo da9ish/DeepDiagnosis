@@ -67,7 +67,12 @@ python main.py
 ![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170321[1].png)  |  ![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170306[1].png)
 ![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170313[1].png)  |  ![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/Screenshot_20170327-170618[1].png)
 
+### Screenshots (Web App)
 
+![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/web_1.jpg)
+![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/web_2.jpg)
+![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/web_3.jpg)
+![](https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/web_4.jpg)
 
 
 ## References
