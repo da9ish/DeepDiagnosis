@@ -5,6 +5,8 @@ The model architecture can be found here => <a href="http://www.cv-foundation.or
 We've trained the model on respective datasets and pickled them for easy use.
 Information regarding the datasets can be found in the [References](#references) section.
 
+<img src="https://github.com/DanishShah/DeepDiagnosis/blob/master/Resources/GooglePlayStore.png" width="200">
+
 
 ## Contents
 * [Requirements](#requirements)
