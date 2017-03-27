@@ -7,11 +7,11 @@ Information regarding the datasets can be found in the Integration as well as Re
 
 
 # Contents
-* Authors
 * Requirements
 * How to get it working
 * Integration
 * References
+* Authors
 * Liscense
 
 # Requirements
@@ -73,7 +73,7 @@ python main.py
 # References
 * Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
 * Want to train your own Inception model? Check out this link : <a href="https://github.com/tensorflow/models/tree/master/inception">Training Inception!</a>
-* Papers that inspired this project:<br>
+* Paper that inspired this project:
   * [Rethinking the Inception Model](https://arxiv.org/pdf/1512.00567.pdf)
   
 
