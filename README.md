@@ -20,10 +20,7 @@ Skin Lesion Classification using Deep Learning
 to be added by Jawad
 
 # Usage
-<pre>
-    <div class="container">
-        <div class="block two first">            
-            <div class="wrap">
+``` python
               import predict.py as pred
               // method for classifying skin lesions
               // returns a string stating whether the lesion is melignant(Cancerous) or benign(non-cancerous) with a percent confidence
@@ -34,7 +31,4 @@ to be added by Jawad
               pred.classifyDiabeticRetinopathy(image);
               
               // Your Program.
-            </div>
-        </div>
-    </div>
-</pre>
+```
