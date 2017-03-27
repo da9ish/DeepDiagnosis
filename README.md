@@ -1,6 +1,8 @@
 # Deep Diagnosis
 This is a research oriented project where we have tried to use machine learning models for classification tasks using images as an input. We've used CNN model for the task of image analysis and classification. The architecture of our model is a standard architecture used by many in the industry. The architecture is called Inception model.
+
 The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a>
+
 
 # Contents
 * Authors
@@ -24,10 +26,10 @@ The model architecture can be found here => <a href="http://www.cv-foundation.or
 * TensorFlow
 
 # How to get it working?
+
 ## The Core
-* Install TensorFlow
-* Clone the repo and execute the following command
-to be added by Jawad
+The core part of the project is simply a program that loads in the trained model and passes an image through it for classification.<br>
+
 
 
 
