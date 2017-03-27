@@ -6,22 +6,22 @@ We've trained the model on respective datasets and pickled them for easy use.
 Information regarding the datasets can be found in the Integration as well as References section.
 
 
-# Contents
-* Requirements
-* How to get it working
-* Integration
-* References
-* Authors
-* Liscense
+## Contents
+* [Requirements](#Requirements)
+* [How to get it working]()
+* [Integration]()
+* [References]()
+* [Authors]()
+* [Liscense]()
 
-# Requirements
+## Requirements
 * Python 3.X.X
 * Flask
 * TensorFlow
 
-# How to get it working?
+## How to get it working?
 
-## The Core
+### The Core
 1. The core part of the project is simply a program that loads in the trained model and passes an image through it for classification.<br>
 2. To run the core section simply clone the repo. copy the "predict.py" file from the root into your project folder.<br>
 3. Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
@@ -45,7 +45,7 @@ pred.classifyDiabeticRetinopathy(image);
 ```
 6. The images should be in the same folder as the "predict.py". Their file name should be passed as an argument to the function.
 
-## The Web App
+### The Web App
 1. Running the web app is even simpler. Just place the trained_nets folder that we've downloaded in the above section and place it in the directory "Web/Backend/"
 2. In the above directory, you'll find a main.py file. That is the file that will launch our Flask app.
 3. Simply open a command line and type in :
@@ -54,12 +54,12 @@ python main.py
 ```
 4. The app wil start locally and the command line will show the URL to access the app.
 
-# Integration
+## Integration
 * We've integrated the trained model with a web app that we explored in the last section and an Android Applicaion.
 * The screens of the Android app is given below.
 * The source of the app can be found in the repo under folder "Android". 
 
-## Screenshots (Android)
+### Screenshots (Android)
 
  .             |   .
 :-------------------------:|:-------------------------:
@@ -70,21 +70,21 @@ python main.py
 
 
 
-# References
+## References
 * Download the trained model pickels from the following link => <a href="https://drive.google.com/drive/folders/0B0eNSOFz7zL7Q2JqN0E5R2NZNXM?usp=sharing">Trained Models</a>
 * Want to train your own Inception model? Check out this link : <a href="https://github.com/tensorflow/models/tree/master/inception">Training Inception!</a>
 * Paper that inspired this project:
   * [Rethinking the Inception Model](https://arxiv.org/pdf/1512.00567.pdf)
   
 
-# Authors
-* Danish Shah
-* Jawad Shaikh
-* Afzal Sayed
-* Aditya Mishra
-* Maaz Khan
+## Authors
+* [Danish Shah](https://github.com/DanishShah)
+* [Jawad Shaikh](https://github.com/jawadsh123)
+* [Afzal Sayed]()
+* [Aditya Mishra]()
+* [Maaz Khan]()
 
-# Liscense
+## Liscense
 This project is licensed under <a href="https://github.com/DanishShah/DeepDiagnosis/blob/master/LICENSE.txt">MIT License</a>
 
 
