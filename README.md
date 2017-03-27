@@ -1,5 +1,6 @@
-# DeepDiagnosis
-Skin Lesion Classification using Deep Learning
+# Deep Diagnosis
+This is a research oriented project where we have tried to use machine learning models for classification tasks using images as an input. We've used CNN model for the task of image analysis and classification. The architecture of our model is a standard architecture used by many in the industry. The architecture is called Inception model.
+The model architecture can be found here => <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf">Inception Model</a>
 
 # Contents
 * Authors
