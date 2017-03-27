@@ -20,6 +20,7 @@ Skin Lesion Classification using Deep Learning
 to be added by Jawad
 
 # Usage
+Import predict.py to your project
 ``` python
               import predict.py as pred
               # method for classifying skin lesions
@@ -32,3 +33,12 @@ to be added by Jawad
               
               # Your Program.
 ```
+
+# Integration
+* DeepDiagnosis can be integrated with any device or technology.
+
+# Example
+
+<img src=""/>
+<img src=""/>
+<img src=""/>
