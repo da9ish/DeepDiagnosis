@@ -2,12 +2,20 @@
 Skin Lesion Classification using Deep Learning
 
 # Contents
+* Authors
 * Requirements
 * Installation
 * Usage
 * Integration
 * Contribution
 * Liscense
+
+# Authors
+* Danish Shah
+* Jawad Shaikh
+* Afzal Sayed
+* Aditya Mishra
+* Maaz Khan
 
 # Requirements
 * Python 3.X.X
