@@ -94,7 +94,7 @@ python main.py
 * [Jawad Shaikh](https://github.com/jawadsh123)
 * [Afzal Sayed]()
 * [Aditya Mishra]()
-* [Maaz Khan]()
+* [Maaz Khan](https://github.com/maazrk)
 
 ## Liscense
 This project is licensed under <a href="https://github.com/DanishShah/DeepDiagnosis/blob/master/LICENSE.txt">MIT License</a>
