@@ -5,6 +5,14 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
+## How to contribute ?
+
+   1. **Fork** the repo on GitHub.
+   2. **Clone** the project to your own machine.
+   3. **Commit** changes to **development** branch.
+   4. **Push** your work back up to your fork.
+   5. Submit a **Pull request** so that i can review your changes
+
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
